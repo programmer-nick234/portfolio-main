@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { IoCopyOutline } from "react-icons/io5";
-import { Player } from "lottie-react";
+import Player from "lottie-react";
 
 import { cn } from "@/lib/utils";
 
@@ -176,7 +176,7 @@ export const BentoGridItem = ({
                   <Player
                     autoplay
                     loop
-                    src={animationData}
+                    animationData={animationData}
                     style={{ height: 200, width: 400 }}
                   />
                 )}
